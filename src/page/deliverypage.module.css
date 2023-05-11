@@ -1,0 +1,209 @@
+.cont{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    width: 95%;
+    margin-top: 63px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 44px;
+}
+.address{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 250px;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 5px;
+}
+.address h1{
+    color: rgb(0, 140,255);
+}
+.address button{
+    cursor: pointer;
+    width:150px;
+    height: 35px;
+    border-radius: 3px;
+    background: rgb(0, 140,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+}
+.address  button span{
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    animation: wave .5s linear infinite;
+}
+.address button span:nth-child(2){
+    animation-delay: 0.1s;
+}
+
+.address button span:nth-child(3){
+    animation-delay: 0.2s;
+}
+
+.address  button span:nth-child(4){
+    animation-delay: 0.3s;
+}
+
+.address  button span:nth-child(5){
+    animation-delay: 0.4s;
+}
+
+@keyframes wave {
+    0%{
+        transform: scale(0);
+    }
+    
+    50%{
+        transform: scale(1);
+    }
+    
+    100%{
+        transform: scale(0);
+    }
+}
+.cartsummary{    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 400px;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 5px;
+    height: 400px;
+}
+.cartsummary h1{
+    color: rgb(0, 140,255);
+}
+.lists{
+    height: 300px;
+    width: 95%;
+    overflow: scroll;
+}
+.cartprice{
+    width:80px;
+    position: relative;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    border: 1px solid rgb(0, 140,255);
+}
+.totalprice{
+    width:100px;
+    position: relative;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    border: 1px solid rgb(0, 140,255);
+}
+.maplist{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+.maplist span{
+    border: 1px solid rgb(0, 140,255);
+    border-radius: 2px;
+    padding: 5px;
+    width:250px;
+}
+.cartprice div{
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgb(0, 140,255);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.totalprice div{
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgb(0, 140,255);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.summaryfooter{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.address form{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    justify-content: space-evenly;
+    align-items: center;
+    height:100px;
+}
+.address form select{
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+    border: 1px solid rgb(0, 140,255);
+}
+.phonenumber{
+    width:200px;
+    height: 40px;
+    position: relative;
+}
+.numformat{
+    width:30px;
+    height: 100%;
+    background: rgb(0, 140,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.phonenumber input{
+    padding:0 0 0 35px;
+    height: 100%;
+    border: 1px solid rgb(0, 140,255);
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+}
+@media(max-width:860px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+@media(max-width:425px){
+    .address{
+        width: 100%;
+    }
+    .cartsummary{
+        width: 100%;
+    }
+}

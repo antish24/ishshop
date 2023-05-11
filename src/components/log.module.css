@@ -1,0 +1,88 @@
+.box{
+    width:100vw;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:63px;
+}
+.form{
+    width: 300px;
+    height: 320px;
+    border: 2px dashed gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.form h1{
+    color: rgb(0, 140, 255);
+}
+.form input{
+    border-radius: 5px;
+    padding:10px 5px;
+    background: rgb(237, 237, 237);
+    width: 80%;
+    color: black;
+    border: none;
+    outline-color: rgb(0, 140, 255);
+}
+.form button{
+    background-color: rgb(0, 140, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width:100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form button span{
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    animation: wave .5s linear infinite;
+}
+.form button span:nth-child(2){
+    animation-delay: 0.1s;
+}
+
+.form button span:nth-child(3){
+    animation-delay: 0.2s;
+}
+
+.form button span:nth-child(4){
+    animation-delay: 0.3s;
+}
+
+.form button span:nth-child(5){
+    animation-delay: 0.4s;
+}
+
+@keyframes wave {
+    0%{
+        transform: scale(0);
+    }
+    
+    50%{
+        transform: scale(1);
+    }
+    
+    100%{
+        transform: scale(0);
+    }
+}
+.form button:active ,button:hover{
+    background-color: rgb(44, 160, 255);
+
+}
+@media(max-width:948px){
+    .box{
+    height: calc(100vh - 103px);
+    margin-bottom: 40px;
+    }
+}

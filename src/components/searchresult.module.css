@@ -1,0 +1,65 @@
+.box:nth-child(even){
+    width: 300px;
+    background: rgba(0, 140, 255, 0.216);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(7, 8, 8);
+}
+.box:nth-child(odd){
+    width: 300px;
+    color: rgba(0, 140, 255,1);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.img{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img img{
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+}
+.info{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+.catagory{
+    font-size: 13px;
+}
+.name{
+    width:150px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.price{
+    width:70px;
+    height: 30px;
+    size: 14px;
+}
+.addTocart{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background:rgba(0, 140, 255,1);
+    color: white;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    bottom: 10px;
+}

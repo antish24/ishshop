@@ -1,0 +1,81 @@
+.cartheader:nth-child(odd) {
+  width: 95%;
+    display: flex;
+    height: 60px;    
+}
+.cartheader:last-child {
+    width: 95%;
+      display: flex;
+      height: 60px;
+  }
+.cartheader:nth-child(even) {
+    background: rgba(0, 140, 255, 0.216);
+    width: 95%;
+      display: flex;
+      height: 60px;
+  }
+.image{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    padding: 10px;
+}
+.product{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.price{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+.quantity{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+.quantity div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.quantity button{
+    width: 30px;
+    height: 40px;
+    border: 1px solid rgb(0,140,255);
+    background: none;
+    color: rgb(0,140,255);
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.quantity div span{
+    font-weight: 400;
+}
+.subtotal{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+.remove{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    cursor: pointer;
+    color: rgba(255, 0, 0, 0.889);
+}

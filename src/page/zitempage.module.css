@@ -1,0 +1,162 @@
+.cont{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 62px;
+    gap: 10px;
+}
+.box{
+    width: 95%;
+    display: flex;
+    height: 300px;
+}
+.zimg{
+    width:30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(0,140,255);
+}
+.zimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.detail{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.catagory{
+    font-size:15px;
+    color:white;
+    width: max-content;
+    padding: 3px;
+    background:  rgb(0,140,255);
+}
+.pname{
+    font-size:40px;
+    color:rgb(0,140,255);
+    font-weight: bold;
+    padding: 3px;
+}
+.price{
+    font-size:20px;
+    color:rgb(0,140,255);
+    font-weight: bold;
+    padding: 3px;
+}
+.addtocart{
+    background: rgb(0,140,255);
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+.recommend{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 45px;
+}
+.titlereco{
+    font-size: 30px;
+    background: rgb(0,140,255);
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.emptycard{
+    width: 250px;
+    height: 300px;
+    background:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+@keyframes load {
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }}
+.emptyimg{
+    width: 95%;
+    animation: load 1s ease-in-out infinite;
+    height: 210px;
+    background: linear-gradient(to right,
+    #c6c6c6 ,#e3e3e3 ,#bebebe);
+    background-size: 200% 200%;
+}
+.emptyinfo{
+    width: 95%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10px;
+}
+.emptyname{
+    width: 70%;
+    height: 35%;
+    animation: load 1s ease-in-out infinite;
+    background: linear-gradient(to right,
+    #c6c6c6 ,#e3e3e3 ,#bebebe);
+    background-size: 200% 200%;
+}
+.emptyprice{
+    width: 30%;
+    height: 30%;
+    animation: load 1s ease-in-out infinite;
+    background: linear-gradient(to right,
+    #c6c6c6 ,#e3e3e3 ,#bebebe);
+    background-size: 200% 200%;
+}
+.emptycart{
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 50px;
+    animation: load 1s ease-in-out infinite;
+    background: linear-gradient(to right,
+    #c6c6c6 ,#e3e3e3 ,#bebebe);
+    background-size: 200% 200%;
+}
+@media(max-width:550px){
+    .emptycardbox{
+        justify-content: center;
+    }
+    .recommend{
+        justify-content:center;
+    }
+    .box{
+        flex-direction: column;
+        height: max-content;
+        gap: 10px;
+    }
+    .zimg {
+        width: 100%;
+        height: 300px;
+    }
+    .detail{
+        width: 100%;
+    }
+}

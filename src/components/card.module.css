@@ -1,0 +1,72 @@
+.itembox{
+    width:250px;
+    height: 300px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.662);
+}
+.itemimg{
+    width: 240px;
+    height: 220px;
+    background-color: rgb(0, 136, 255);
+    cursor: pointer;
+    border-radius: 2px;
+}
+.itemimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+.iteminfo{
+    width: 240px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.itemtxt{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width:calc(100% - 60px);
+}
+.itemname{
+    color: rgb(0, 136, 255);
+    font-size: 20px;
+    width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.itemname span{
+    width:100%;
+    white-space: nowrap;
+    height: 30px;
+}
+.itemprice{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+.additemtocart{
+    color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 136, 255);
+    cursor: pointer;
+    border: 1px solid rgb(0, 136, 255);
+    transition: .3s all;
+}
+.additemtocart:hover ,.additemtocart:active{
+    color: rgb(0, 136, 255);
+    background: white;
+    border: 1px solid rgb(0, 136, 255);
+}

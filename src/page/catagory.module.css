@@ -1,0 +1,147 @@
+.cont{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    margin-top: 63px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 95%;
+    flex-direction: column;
+}
+.catagorylists{
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+width: 100%;
+justify-content: space-between;
+}
+.catagorylists a{
+   border: 1px solid rgb(0, 140, 255);
+   border-radius: 3px; 
+   width:100px;
+   height:30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   color: rgb(0, 140, 255);
+   font-size: 15px;
+   transition:.3s all;
+}
+.catagorylists a:hover {
+    background: rgb(0, 140, 255);
+    color:white;
+    font-size: 16px;
+ }
+.catagorytitle{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 140, 255);
+    color: white;
+} 
+.products{
+    width: 100%;
+    display: flex;
+ }
+
+.emptyproduct{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+    align-items: center;
+}
+.emptyproduct h1{
+    color: rgb(0, 140, 255);
+}
+.emptycardbox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    gap: 20px;
+}
+.emptycard{
+    width: 250px;
+    height: 300px;
+    background:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+@keyframes load {
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }}
+.emptyimg{
+    width: 95%;
+    animation: load 1s ease-in-out infinite;
+    height: 210px;
+    background: linear-gradient(to right,
+    #c6c6c6 ,#e3e3e3 ,#bebebe);
+    background-size: 200% 200%;
+}
+.emptyinfo{
+    width: 95%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10px;
+}
+.emptyname{
+    width: 70%;
+    height: 35%;
+    animation: load 1s ease-in-out infinite;
+    background: linear-gradient(to right,
+    #c6c6c6 ,#e3e3e3 ,#bebebe);
+    background-size: 200% 200%;
+}
+.emptyprice{
+    width: 30%;
+    height: 30%;
+    animation: load 1s ease-in-out infinite;
+    background: linear-gradient(to right,
+    #c6c6c6 ,#e3e3e3 ,#bebebe);
+    background-size: 200% 200%;
+}
+.emptycart{
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 50px;
+    animation: load 1s ease-in-out infinite;
+    background: linear-gradient(to right,
+    #c6c6c6 ,#e3e3e3 ,#bebebe);
+    background-size: 200% 200%;
+}
+ .mapproduct{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+ }
+ @media(max-width:550px){
+    .emptycardbox{
+        justify-content: center;
+    }
+    .mapproduct{
+        justify-content: center;
+    margin-bottom: 43px;
+
+    }
+}
